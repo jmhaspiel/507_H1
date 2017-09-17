@@ -126,7 +126,6 @@ if __name__ == "__main__":
         print("TIE!")
         s = show_song("tie")
         s.open_url_for_track()
-
 ## NOTE: if you see a message like so, running this on a Mac computer:
 ## 0:94: execution error: "https://itunes.apple.com/us/album/bears-adventure/id495954957?i=495955054&uo=4" doesn’t understand the “open location” message. (-1708)
 ## That's an Apple-related error but will not cause you a problem. Don't worry about it.

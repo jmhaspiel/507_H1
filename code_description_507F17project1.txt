@@ -11,6 +11,8 @@ Note that this description covers what the code SHOULD do. It may be very slight
 		* 11:"Jack"
 		* 12:"Queen"
 		* 13:"King"
+/// is suit names of type list
+are the elements in suit names strings and are they suit names
 
 	* The class Card's constructor should accept a number representing a suit and a number representing a rank. You can assume that no one should ever put in a number that is an invalid suit (less than zero or greater than 3) or an invalid rank (less than zero or greater than 13). The default value for a suit in the Card constructor (variable name *suit*) is 0, for Diamonds, and the default value for the rank in the Card constructor (variable name *rank*) is 2.
 
@@ -39,7 +41,7 @@ Note that this description covers what the code SHOULD do. It may be very slight
 
 	* Deck has a method sort_cards which should organize the cards remaining in the deck into an order such that they are in ascending order by suit: Diamonds, then Clubs, then Hearts, then Spades.
 
-	* Deck has a method deal_hand which takes a required input hand_size, an integer representing the number of cars in the hand. It should return a list of Card objects that make up the hand dealt. A hand should be able to be dealt up to the full size of the current deck (e.g. if 3 cards have been removed from the deck and not replaced, it should be impossible to deal a 52-card hand, but if no cards have been removed, it should be possible)
+	* Deck has a method deal_hand which takes a required input hand_size, an integer representing the number of cards in the hand. It should return a list of Card objects that make up the hand dealt. A hand should be able to be dealt up to the full size of the current deck (e.g. if 3 cards have been removed from the deck and not replaced, it should be impossible to deal a 52-card hand, but if no cards have been removed, it should be possible)
 
 
 * A function play_war_game 
