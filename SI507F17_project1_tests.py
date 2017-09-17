@@ -2,7 +2,8 @@
 import unittest
 from SI507F17_project1_cards import *
 
-# ***** On all tests collaborated with Tyler Hoff and Saul *****
+# ***** On all tests collaborated with Tyler Hoff and Saul Hankin *****
+# ***** Tyler Hoff and Saul utilized code lines 164-178 *****
 
 ## Write your unit tests to test the cards code here.
 ## You should test to ensure that everything explained in the code description file works as that file says.
@@ -157,6 +158,7 @@ class TestCards(unittest.TestCase):
 			else:
 				self.assertEqual(i.suit,"Spades", "Testing the length of the sorted deck is consistent with sorted deck missing popped card")
 			deckcount+=1
+
 	def test_dealhandmethodhandsize(self):
 		self.assertEqual(len(self.testdeck.deal_hand(5)),5)
 
@@ -197,9 +199,12 @@ class TestWarGame(unittest.TestCase):
 
 class TestShowSong(unittest.TestCase):
 
-	def test_showsongname(self):
-		print (type(show_song()))
-		self.assertTrue("Winner" in show_song().__str__().split())
+	def test_showsong_name(self):
+		showsongtest = show_song()
+		showsongtest2 = show_song()
+		self.assertNotEqual(showsongtest,showsongtest2)
+		self.assertIsInstance(showsongtest,helper_functions.Song)
+		
 		
 
 
