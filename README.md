@@ -22,3 +22,5 @@ To run the card game file open terminal ->
 navigate to folder location -> 
 open the virtual environment described above -> 
 python3F17_project1_cards.py
+
+Note** there are some bugs in this code than may prevent it from working properly.
