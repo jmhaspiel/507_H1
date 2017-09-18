@@ -31,7 +31,8 @@ class Song(object):
         return len(self.album.split())
 
     def num_words_in_name_sans_determiners(self):
-        return len([x for x in self.album.split() if (x.lower() != "the") and (x.lower() != "a")])
+        return len([x for x in self.album.split()
+                    if (x.lower() != "the") and (x.lower() != "a")])
 
     def open_url_for_track(self):
         if self.track_url:
